@@ -1,0 +1,157 @@
+html {
+  background-image: url(/Blackwood.jpg);
+}
+.body {
+  position: absolute;
+  height: 74.9%;
+  width: 40%;
+  right: 30%;
+  left: 30%;
+  top: 25%;
+  background-color: #221e1e;
+  border-top: solid 0.5px;
+  border-right: solid 0.5px;
+  border-left: solid 0.5px;
+  display: grid;
+  grid-template:
+  1fr 52px 0.5fr 0.5fr 1fr /
+  1fr 0.5fr 0.5fr 1fr;
+  justify-items: center;
+  align-items: start;
+  grid-template-areas:
+    "title title title title"
+    "pre pre pre pre"
+    "input input input input"
+    ". button button ."
+    "result result result result";
+}
+#Res {
+  font-family:
+  "Lucida Sans",
+  "Lucida Sans Regular",
+  "Lucida Grande",
+  "Lucida Sans Unicode",
+  Geneva, Verdana, sans-serif;
+  font-size: 1.1cm;
+  color: #945e0d;
+  grid-area: title;
+  font-size: xx-large;
+  grid-area: result;
+}
+.Cap {
+  font-size: xx-large;
+  color: #ffff;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border:solid 0.5px #000000;
+  display: inline-block;
+}
+
+#butt {
+  grid-area: button;
+  font-size: xx-larger;
+  height: 60px;
+}
+#GD {
+  font-family:
+  "Lucida Sans",
+  "Lucida Sans Regular",
+  "Lucida Grande",
+  "Lucida Sans Unicode",
+  Geneva, Verdana, sans-serif;
+  font-size: 1.1cm;
+  color: #945e0d;
+  grid-area: title;
+}
+button {
+  background-color: #FFCFAA;
+  font-family:
+  "Lucida Sans",
+  "Lucida Sans Regular",
+  "Lucida Grande";
+  border: none;
+  height: 50px;
+  font-size: xx-large;
+}
+button:hover {
+  color: #945e0d;
+  border: solid 0.5px#221e1e;
+}
+#navbar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 60px;
+  background-color: #221e1e;
+  border-bottom: solid 0.5px;
+  display: grid;
+  grid-template: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: ". . tit tit . feedbk";
+  justify-items:center;
+  align-items:center;
+  nav-index: 10;
+}
+.title {
+  font-family: "Playfair Display", serif;
+  color: #ffffff;
+  font-size: xxx-large;
+  margin: 0px 20px 20px 10px;
+  text-shadow:
+  0px 2px 2px #945e0d,
+  0px -2px 2px #945e0d,
+  2px 0px 2px #945e0d,
+  -2px 0px 2px #945e0d;
+  text-decoration: none;
+  grid-area:tit;
+}
+.fdbk {
+  color: #ffffff;
+  text-shadow:
+  0px 1px 1px #000000,
+  0px -1px 1px #000000,
+  1px 0px 1px #000000,
+    -1px 0px 1px #000000;
+  font-size: large;
+  text-decoration: none;
+  position: relative;
+  right: 25px;
+  grid-area:feedbk;
+}
+.fdbk:hover {
+  font-size: larger;
+  color: #945e0d;
+  text-decoration: #945e0d;
+}
+#keyboard {
+  position: absolute;
+  bottom: 0%;
+  right: 31%;
+  left: 31%;
+  height: 10%;
+  width: 38%;
+  background-color: #221e1e;
+  border-top: #221e1e solid 0.5px;
+  border-left: #221e1e solid 0.5px;
+  border-right: #221e1e solid 0.5px;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 45px;
+  align-items: center;
+  justify-content: space-around;
+}
+.Kbut {
+  background-color: #808080;
+  width: 9%;
+  height: 40%;
+  margin: 2px;
+  font-size: 0.8cm;
+  font-family: "Crimson Text", serif;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.Kbut:hover {
+  color: #945e0d;
+}
