@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="EN">
+<link rel="stylesheet" href="/Style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+<head>
+    <div id="navbar">
+        <a href="#" class="title">Numdle</a>
+        <a href="#" class="fdbk">Feedback</a>
+    </div>
+</head>
+
+<body>
+    <div class="body">
+        <p id="GD">Find the secret Number!</p>
+        <div id="PA" style="grid-area: input;">
+            <p class="Cap" id="A1"></p>
+            <p class="Cap" id="A2"></p>
+            <p class="Cap" id="A3"></p>
+            <p class="Cap" id="A4"></p>
+        </div>
+        <div id="PB" style="grid-area: input;">
+            <p class="Cap" id="B1"></p>
+            <p class="Cap" id="B2"></p>
+            <p class="Cap" id="B3"></p>
+            <p class="Cap" id="B4"></p>
+        </div>
+    </div>
+    <button onclick="checkGuess()" id="butt">shoot!</button>
+    <div id="keyboard">
+        <button onclick="input(0)" class="Kbut" id="K0">0</button>
+        <button onclick="input(1)" class="Kbut" id="K1">1</button>
+        <button onclick="input(2)" class="Kbut" id="K2">2</button>
+        <button onclick="input(3)" class="Kbut" id="K3">3</button>
+        <button onclick="input(4)" class="Kbut" id="K4">4</button>
+        <button onclick="input(5)" class="Kbut" id="K5">5</button>
+        <button onclick="input(6)" class="Kbut" id="K6">6</button>
+        <button onclick="input(7)" class="Kbut" id="K7">7</button>
+        <button onclick="input(8)" class="Kbut" id="K8">8</button>
+        <button onclick="input(9)" class="Kbut" id="K9">9</button>
+    </div>
+
+</body>
+<script type="text/javascript" src="./Script.JS"></script>
+
+
+</html>
